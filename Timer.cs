@@ -7,11 +7,13 @@ public class Timer : MonoBehaviour
     public Text timeText;       // タイム表示用のテキスト
     float startTime;            // 計測開始の時刻
     bool start, check, goal;    // 各地点の通過フラグ
+
     void Start()
     {
         timeText = GameObject.Find("TimeText").GetComponent<Text>();    // オブジェクトのコンポーネントを取得
         timeText.text = "TIME  00.000";         // テキストの初期化
     }
+
     void Update()
     {
         // スタートしてからゴールするまでタイムを表示

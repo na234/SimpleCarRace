@@ -23,8 +23,8 @@ public class CarController : MonoBehaviour
     void Update()
     {
         // ユーザからの入力
-        accel = Input.GetAxis("Horizontal");    // ←→で旋回
-        steer = Input.GetAxis("Vertical");      // ↑↓でアクセル
+        steer = Input.GetAxis("Horizontal");    // ←→で旋回
+        accel = Input.GetAxis("Vertical");      // ↑↓でアクセル
         brake = Input.GetKey(KeyCode.Space);    // スペースでブレーキ
 
         // ランプ類の点灯・消灯
